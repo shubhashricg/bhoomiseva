@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --font-domine: 'Domine', serif;
+  --font-noto: 'Noto Serif Display', serif;
+  --font-roboto: 'Roboto Slab', serif;
+  --orange: #ff6600;
+  --red: rgb(255 51 0);
+}
+
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.rounded-orangeBtn{
+  background-color: var(--orange);
+  color: white;
+  padding: 1.7% 5%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 100rem;
+}
+
+.rounded-whiteBtn{
+  background-color: #fff;
+  color: var(--orange);
+  padding: 1.7% 5%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 100rem;
+}
+
+.redBtn{
+  background-color: var(--red) !important;
+  color: white !important;
+  transition: 0.2s ease-in-out;
+}
+
+.redBtn:hover{
+  color: white !important;
+  background-color: rgb(219, 45, 1) !important;
+  transition: 0.2s ease-in-out;
+}
+
+.section-title{
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.fancy-title{
+  font-family: var(--font-noto);
+}
+
+.title{
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.link{
+  color:rgb(255, 51, 0);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.link:hover{
+  color:rgb(255, 51, 0);
+  text-decoration: none;
+}
+
+.location{
+  color:rgb(255, 51, 0);
+}

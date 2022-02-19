@@ -1,0 +1,89 @@
+.banner-img{
+    background-image: url(../../../images/banner.jpeg);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.home-banner-text{
+    color: white;
+    margin-left: 2%;
+}
+
+.welcome-text{
+    font-family: var(--font-noto);
+    font-size: 5.5rem;
+    margin-top: 30%;
+}
+
+.what-we-do{
+    margin-top: 2%;
+}
+
+.what-we-do .card{
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.what-we-do .card-title{
+    font-size: 2rem
+}
+
+.recent-events{
+    background-image: url(../../../images/texture.jpeg);
+    background-size: 100% 100%;
+}
+
+.recent-events{
+    margin-top: 2%;
+    padding: 2% 5%;
+}
+
+.recent-events .card{
+    border: none;
+    background-color: transparent;
+}
+
+.recent-events img{
+    border-radius: 0.8rem;
+    background-color: transparent;
+}
+
+.recent-events .card-title{
+    font-size: 1.4rem;
+}
+
+
+.dropdown-button{
+    background-color: #ff6600;
+    color: white;
+    padding: 1.2% 10%;
+    border: none;
+    border-radius: 100rem;
+}
+
+.accordion-body{
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2) !important;
+    margin-top: 2% !important;
+}
+
+.events-ongoing{
+    margin-top: 3%;
+}
+
+.events-ongoing .card{
+    border: none;
+}
+
+.events-ongoing img{
+    border-radius: 0.8rem;
+}
+
+.events-ongoing .card-title{
+    font-size: 1.4rem;
+}
+
+.events-ongoing p{
+    text-align: left !important;
+}
