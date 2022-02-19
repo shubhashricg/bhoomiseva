@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bhoomiseva/static/css/main.6f92f3aa.css",
-    "main.js": "/bhoomiseva/static/js/main.d14ffcc8.js",
+    "main.css": "/bhoomiseva/static/css/main.860728dd.css",
+    "main.js": "/bhoomiseva/static/js/main.00bd0fd2.js",
     "static/js/787.da29499f.chunk.js": "/bhoomiseva/static/js/787.da29499f.chunk.js",
     "static/media/envBg.jpeg": "/bhoomiseva/static/media/envBg.afc5f540782f060802e2.jpeg",
     "static/media/cowdonation.jpg": "/bhoomiseva/static/media/cowdonation.b0ed0866ee748002b26c.jpg",
@@ -12,12 +12,12 @@
     "static/media/texture.jpeg": "/bhoomiseva/static/media/texture.de176ea84ccfea6dc2c9.jpeg",
     "static/media/logo.jpeg": "/bhoomiseva/static/media/logo.42c15a1d1a3a93b18aab.jpeg",
     "index.html": "/bhoomiseva/index.html",
-    "main.6f92f3aa.css.map": "/bhoomiseva/static/css/main.6f92f3aa.css.map",
-    "main.d14ffcc8.js.map": "/bhoomiseva/static/js/main.d14ffcc8.js.map",
+    "main.860728dd.css.map": "/bhoomiseva/static/css/main.860728dd.css.map",
+    "main.00bd0fd2.js.map": "/bhoomiseva/static/js/main.00bd0fd2.js.map",
     "787.da29499f.chunk.js.map": "/bhoomiseva/static/js/787.da29499f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f92f3aa.css",
-    "static/js/main.d14ffcc8.js"
+    "static/css/main.860728dd.css",
+    "static/js/main.00bd0fd2.js"
   ]
 }
