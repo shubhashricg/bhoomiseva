@@ -20,3 +20,14 @@
 .dev-link:hover{
     color: #6c757d;
 }
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        padding: 0% 2.5%;
+    }
+    .credit{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+

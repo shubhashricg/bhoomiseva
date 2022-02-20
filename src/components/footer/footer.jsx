@@ -1,5 +1,7 @@
 import React from 'react';
 import './footer.css';
+import { email } from '../../App';
+import { phone } from '../../App';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
@@ -13,7 +15,7 @@ export default function footer() {
 
                     <div class="row footer-wrapper" style={{"margin-top": "5%"}}>
                         <div class="col-sm-6">
-                            <p style={{"text-align": "left"}} class="text-muted"><FontAwesomeIcon icon={faPhone} style={{"color": "grey", "text-align": "right"}} size="2x" />&nbsp;&nbsp;&nbsp;&nbsp; +919900103178</p>
+                            <p style={{"text-align": "left"}} class="text-muted"><FontAwesomeIcon icon={faPhone} style={{"color": "grey", "text-align": "right"}} size="2x" />&nbsp;&nbsp;&nbsp;&nbsp; {phone}</p>
                         </div>
                         <div class="col-sm-6">
                         </div>
@@ -21,7 +23,7 @@ export default function footer() {
 
                     <div class="row footer-wrapper" style={{"margin-top": "5%"}}>
                         <div class="col-sm-6">
-                            <p style={{"text-align": "left"}} class="text-muted"><FontAwesomeIcon icon={faEnvelope} style={{"color": "grey", "text-align": "right"}} size="2x" />&nbsp;&nbsp;&nbsp;&nbsp; bhoomiseva.org@gmail.com</p>
+                            <p style={{"text-align": "left"}} class="text-muted"><FontAwesomeIcon icon={faEnvelope} style={{"color": "grey", "text-align": "right"}} size="2x" />&nbsp;&nbsp;&nbsp;&nbsp; {email}</p>
                         </div>
                         <div class="col-sm-6">
                         </div>
@@ -30,12 +32,12 @@ export default function footer() {
                 </div>
                 <div class="col-sm-8">
                     <div style={{"margin-top": "8%"}}>
-                        <h3 class="mx-auto text-center" style={{"color": "#fff"}}>OUR MISSION</h3>
+                        <h3 class="mx-auto text-center mobile-footer-title" style={{"color": "#fff"}}>OUR MISSION</h3>
                         <p class="text-muted text-center footer-desc" style={{"text-align": "left"}}>Bhoomi Seva mission is to reach out and help people in need in various ways esp. rural population, and rejuvenate our environment in our own capacity. </p>
                     </div>
 
                     <div style={{"margin-top": "5%"}}>
-                        <h3 class="mx-auto text-center" style={{"color": "#fff"}}>OUR VISION</h3>
+                        <h3 class="mx-auto text-center mobile-footer-title" style={{"color": "#fff"}}>OUR VISION</h3>
                         <p class="text-muted text-center footer-desc" style={{"text-align": "left"}}>To uplift rural population and improve fertility of soil by encouraging farmers to take up agroforestry and/or natural farming(in Kanakapura area to start with).
                         </p>
                     </div>

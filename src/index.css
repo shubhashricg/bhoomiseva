@@ -8,6 +8,7 @@
   --font-roboto: 'Roboto Slab', serif;
   --orange: #ff6600;
   --red: rgb(255 51 0);
+  --hover: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 
@@ -53,7 +54,7 @@ code {
 
 .redBtn:hover{
   color: white !important;
-  background-color: rgb(219, 45, 1) !important;
+  background-color: rgb(243, 51, 1) !important;
   transition: 0.2s ease-in-out;
 }
 
@@ -84,4 +85,45 @@ code {
 
 .location{
   color:rgb(255, 51, 0);
+}
+
+.banner-section-title{
+  color: white;
+  font-family: var(--font-noto);
+  font-weight: 800;
+  font-size: 4.5rem;
+  margin-left: 2%;
+  margin-top: 10%;
+}
+
+.page-title{
+  font-family: var(--font-noto);
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 5%;
+  margin-left: 4%;
+}
+
+.whatsappBtn{
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 2.5% 8%;
+  border-radius: 0.2rem;
+}
+
+.facebookBtn{
+  background-color: #1877F2;
+  color: white;
+  border: none;
+  padding: 2.5% 8%;
+  border-radius: 0.2rem;
+}
+
+.donateBtn{
+  background-color: var(--red);
+  color: #fff;
+  padding: 2% 12%;
+  border: none;
+  border-radius: 0.2rem;
 }

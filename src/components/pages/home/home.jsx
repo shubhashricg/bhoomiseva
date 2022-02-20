@@ -1,18 +1,19 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './home.css';
 import Navbar from '../../navbar/navbar';
-import Footer from '../../footer/footer';
 import logo from '../../../images/logo.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSeedling, faSchool, faHouseChimneyUser, faChevronDown, faMapMarkerAlt, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import cowDonation from '../../../images/recent-events/cowdonation.jpg';
-import mealSponsor from '../../../images/recent-events/mealsponsor.jpg';
-import scholarship from '../../../images/recent-events/scholarship.jpg';
-import farmerTraining from '../../../images/events/farmerTraining.jpeg';
+import { recentEvent_1_description, recentEvent_2_description, recentEvent_3_description, recentEvent_1_image, recentEvent_2_image, recentEvent_3_image } from '../../../recentEventManager';
+import { event_1_description, event_1_title, event_1_location, event_1_image } from '../../../eventManager';
 
 export default function home() {
   return (
     <div className="home-banner">
+      <Helmet>
+        <title>Bhoomi Seva</title>
+      </Helmet>
       <div className='banner-img'>
         <Navbar />
 
@@ -31,14 +32,14 @@ export default function home() {
                 <button className="rounded-orangeBtn">
                   Donate
                 </button>
-                <button className="rounded-whiteBtn" style={{"margin-left": "1%"}}>
+                <button className="rounded-whiteBtn" style={{"margin-left": "2%"}}>
                   Contact
                 </button>
               </div>
             </div>
 
             <div className="col-sm-6 mx-auto text-end">
-              <img src={logo} alt="bhoomi seva logo" className='img-fluid ms-auto' style={{"width": "45%", "marginTop": "30%", "marginRight": "10%"}} />
+              <img src={logo} alt="bhoomi seva logo" className='img-fluid ms-auto remove' style={{"width": "45%", "marginTop": "30%", "marginRight": "10%"}} />
             </div>
           </div>
           
@@ -47,7 +48,7 @@ export default function home() {
         </div>
 
         <section className="what-we-do">
-          <h1 className='section-title fancy-title mx-auto text-center'>WHAT WE DO?</h1>
+          <h1 className='section-title fancy-title mx-auto text-center'>WHAT WE DO</h1>
         <div class="row card-container" style={{"padding": "2%"}} >
                 <div class="col-sm-4 card-container-ind">
                     <div class="card">
@@ -100,15 +101,15 @@ export default function home() {
             </div>
         </section>
 
-        <div className="recent-events">
-        <h1 class="fancy-title mx-auto text-center" style={{"color": "var(--orange)"}}>Recent Events</h1>
+        <div className="recent-events" style={{"min-height": "90vh"}}>
+        <h1 class="fancy-title mobile-title mx-auto text-center" style={{"color": "var(--orange)", "font-weight": "700"}}>Recent Events</h1>
             <h1 class='title mx-auto text-center'>AT BHOOMI SEVA</h1>
 
             <div class="row mx-auto text-center" style={{"margin-top": "5%"}}>
               
                 <div class="col-sm-4">
                   <div class="card">
-                    <img src={cowDonation} class="card-img-top"  alt="cow donation" />
+                    <img src={recentEvent_1_image} class="card-img-top"  alt="cow donation" />
                     <div class="card-body">
                       
                       <div>
@@ -117,7 +118,7 @@ export default function home() {
                           </button>
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                           <div class="accordion-body">
-                            <p class="mx-auto text-break">Cow Donation to a Woman Farmer - Sunitha from Kabbalu, Kanakapura</p>
+                            <p class="mx-auto text-break">{recentEvent_1_description}</p>
                           </div>
                         </div>
                       </div>
@@ -129,7 +130,7 @@ export default function home() {
 
                 <div class="col-sm-4">
                     <div class="card">
-                        <img src={scholarship} class="card-img-top" alt="scholarship" />
+                        <img src={recentEvent_2_image} class="card-img-top" alt="scholarship" />
                         <div class="card-body">
 
                           <div>
@@ -138,7 +139,7 @@ export default function home() {
                             </button>
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <p class="mx-auto text-break">Scholarship/School fees distribution to students </p>
+                              <p class="mx-auto text-break">{recentEvent_2_description} </p>
                             </div>
                           </div>
                         </div>
@@ -149,7 +150,7 @@ export default function home() {
 
                 <div class="col-sm-4">
                     <div class="card">
-                        <img src={mealSponsor} class="card-img-top" alt="meal sponsor" />
+                        <img src={recentEvent_3_image} class="card-img-top" alt="meal sponsor" />
                         <div class="card-body">
 
                           <div>
@@ -158,7 +159,7 @@ export default function home() {
                             </button>
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                              <p class="mx-auto text-break">Meal Sponsored in Sri Krishnashraya orphanage during Balipadyami </p>
+                              <p class="mx-auto text-break">{recentEvent_3_description}</p>
                             </div>
                           </div>
                         </div>
@@ -171,17 +172,17 @@ export default function home() {
         </div>
 
         <div className="events-ongoing" style={{"marginTop": "2%"}}>
-        <h1 class="fancy-title mx-auto text-center" style={{"color": "var(--orange)"}}>Initiatives Ongoing</h1>
+        <h1 class="fancy-title mobile-title mx-auto text-center" style={{"color": "var(--orange)"}}>Initiatives Ongoing</h1>
             <h1 class='title mx-auto text-center'>AT BHOOMI SEVA</h1>
 
             <div class="row" style={{"padding": "2% 5%"}}>
                 <div class='col-sm-4'>
                     <div class="card">
-                        <img src={farmerTraining} class="card-img-top" alt="farmers training" />
+                        <img src={event_1_image} class="card-img-top" alt="farmers training" />
                         <div class="card-body">
-                          <h5 class="card-title">Farmers’ training in agroforestry and natural farming</h5>
-                          <h5 class='location'><FontAwesomeIcon icon={faMapMarkerAlt} /> Chirantana School, Kabbalu, Kanakapura</h5>
-                          <p class="card-text" style={{"textAlign": "left"}}>Farmers’ training in agroforestry and natural farming is organized on 16th and 17th of April in Chirantana School, Kabbalu, Kanakapura to spread awareness among farmers. </p>
+                          <h5 class="card-title">{event_1_title}</h5>
+                          <h5 class='location'><FontAwesomeIcon icon={faMapMarkerAlt} /> {event_1_location}</h5>
+                          <p class="card-text" style={{"textAlign": "left"}}>{event_1_description}</p>
                           <a href="/event-1" class="link">Learn more <FontAwesomeIcon icon={faChevronRight} size='xs' /></a>
                         </div>
                     </div>
@@ -200,8 +201,6 @@ export default function home() {
                 <button class="btn redBtn">VIEW EVENTS</button>
             </div>
         </div>
-
-        <Footer />
 
     </div>
   )

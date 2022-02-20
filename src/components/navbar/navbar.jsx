@@ -1,6 +1,8 @@
 import React from 'react';
-import './navbar.css'
+import './navbar.css';
+import logo from '../../images/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 export default function navbar() {
@@ -8,9 +10,9 @@ export default function navbar() {
     <div>
         <nav class="navbar navbar-expand-lg bg-transparent">
     <div class="container-fluid">
-      {/* <img src={logo} alt="Bhoomi Seva Logo" width="150" height="150" /> */}
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <img src={logo} alt="Bhoomi Seva Logo" className='removePC' width="120" height="120" />
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <FontAwesomeIcon icon={faBars} size="xl" style={{"color": "white"}} />
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">

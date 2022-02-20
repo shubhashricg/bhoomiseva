@@ -11,32 +11,34 @@
 }
 
 .nav-link{
-    color: rgba(255, 255, 255, 0.863) !important;
+    color: white !important;
     padding: 0 0.8rem !important;
     text-decoration: none;
     transition: 0.2s ease-in-out;
 }
 
 .nav-link:hover{
-    color: white !important;
+    color: rgba(255, 255, 255, 0.850) !important;
     text-decoration: none;
     transition: 0.2s ease-in-out;
 }
 
 .social-link{
-    color: rgba(255, 255, 255, 0.863) !important;
+    color: white !important;
     padding: 0 0.4rem !important;
     transition: 0.2s ease-in-out;
 }
 
 .social-link:hover{
-    color: white !important;
+    color: rgba(255, 255, 255, 0.850) !important;
     transition: 0.2s ease-in-out;
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
+    box-shadow: var(--hover);
+    border: none !important;
  }
 
 .dropdown-item{
@@ -48,7 +50,7 @@
 }
 
 .dropdown-item:hover{
-    color: rgb(161, 161, 161) !important;
+    color: rgb(104, 104, 104) !important;
     background-color: transparent !important;
     transition: 0.2s ease-in-out !important;
 }
