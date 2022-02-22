@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/bhoomiseva/static/css/main.39fe4c4d.css",
-    "main.js": "/bhoomiseva/static/js/main.b90cec00.js",
+    "main.css": "/bhoomiseva/static/css/main.e0e64f42.css",
+    "main.js": "/bhoomiseva/static/js/main.b91b4cf6.js",
     "static/js/787.da29499f.chunk.js": "/bhoomiseva/static/js/787.da29499f.chunk.js",
     "static/media/contactBG.jpeg": "/bhoomiseva/static/media/contactBG.d946c93a3fca92ad88f2.jpeg",
+    "static/media/forest-bg.jpeg": "/bhoomiseva/static/media/forest-bg.381ecc2a722b6b31aa2e.jpeg",
+    "static/media/aboutBG.jpeg": "/bhoomiseva/static/media/aboutBG.c008e5fbdc6a03da77d8.jpeg",
     "static/media/envBg.jpeg": "/bhoomiseva/static/media/envBg.afc5f540782f060802e2.jpeg",
     "static/media/cowdonation.jpg": "/bhoomiseva/static/media/cowdonation.b0ed0866ee748002b26c.jpg",
     "static/media/cowdonation2.jpg": "/bhoomiseva/static/media/cowdonation2.b0ed0866ee748002b26c.jpg",
@@ -24,12 +26,12 @@
     "static/media/ram.jpeg": "/bhoomiseva/static/media/ram.9b2634b9a0cea4e927f1.jpeg",
     "static/media/logo.jpeg": "/bhoomiseva/static/media/logo.42c15a1d1a3a93b18aab.jpeg",
     "index.html": "/bhoomiseva/index.html",
-    "main.39fe4c4d.css.map": "/bhoomiseva/static/css/main.39fe4c4d.css.map",
-    "main.b90cec00.js.map": "/bhoomiseva/static/js/main.b90cec00.js.map",
+    "main.e0e64f42.css.map": "/bhoomiseva/static/css/main.e0e64f42.css.map",
+    "main.b91b4cf6.js.map": "/bhoomiseva/static/js/main.b91b4cf6.js.map",
     "787.da29499f.chunk.js.map": "/bhoomiseva/static/js/787.da29499f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39fe4c4d.css",
-    "static/js/main.b90cec00.js"
+    "static/css/main.e0e64f42.css",
+    "static/js/main.b91b4cf6.js"
   ]
 }
