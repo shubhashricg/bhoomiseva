@@ -1,0 +1,9 @@
+.donate-bg{
+    background-image: url(../../../images/donate/donateBG.jpeg);
+    background-size: 100% 100%;
+    height: 75vh;
+}
+
+mark{
+    background-color: rgba(255, 255, 0, 0.932) !important;
+}

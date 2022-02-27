@@ -1,0 +1,13 @@
+.about-bg{
+    background-image: url('../../../images/about/aboutBG.jpeg');
+    background-size: 100% 100%;
+    height: 85vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-bg{
+        background-image: url('../../../images/about/aboutBG.jpeg');
+        background-size: 200% 100%;
+        height: 75vh;
+    }
+}

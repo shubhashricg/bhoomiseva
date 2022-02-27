@@ -1,0 +1,14 @@
+.contact-bg{
+    background-image: url(../../../images/contact/contactBG.jpeg);
+    background-size: 100% 100%;
+    height: 85vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contact-bg{
+        background-image: url(../../../images/contact/contactBG.jpeg);
+        background-size: 200% 100%;
+        height: 75vh;
+    }
+}

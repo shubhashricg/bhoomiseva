@@ -91,7 +91,7 @@
 @media only screen and (max-width: 600px) {
     .welcome-text{
         font-size: 3.6rem;
-        margin-top: 35%;
+        margin-top: 45%;
     }
     .home-banner-text{
         font-size: 3.6rem !important;
@@ -121,6 +121,22 @@
     .mobile-title{
         font-size: 2rem;
     }
+    .rounded-orangeBtn{
+        background-color: var(--orange);
+        color: white;
+        padding: 2.4% 6%;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 100rem;
+    }
+    .rounded-whiteBtn{
+        background-color: #fff;
+        color: var(--orange);
+        padding: 2.4% 6%;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 100rem;
+      }
 }
 
 @media (min-width: 992px) { 
@@ -147,5 +163,11 @@
     }
     .home-banner-btnHolder{
         margin-top: -5% !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .welcome-text{
+        margin-top: 12%;
     }
 }

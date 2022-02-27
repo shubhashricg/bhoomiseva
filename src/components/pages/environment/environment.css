@@ -3,3 +3,59 @@
     background-size: 100% 100%;
     height: 75vh;
 }
+
+.testimonial{
+    border: none !important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 1% 2%;
+}
+
+.testimonial .card-text{
+    font-size: 1rem;
+}
+
+.testimonial .card-title{
+    font-size: 1.25rem;
+}
+
+.card-subtitle{
+    font-size: 1.1rem;
+}
+
+.project-section-text{
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner-section-title{
+        font-size: 3.5rem;
+        margin-top: 25%
+    }
+    .env-bg{
+        background-image: url(../../../images/environment/envBg.jpeg);
+        background-size: 200% 100%;
+        height: 75vh;
+    }
+    .rounded-orangeBtn{
+        padding: 2.4% 5.2% !important;
+    }
+    .rounded-whiteBtn{
+        padding: 2.4% 5.2% !important;
+    }
+    .phone-img{
+        width: 100% !important;
+    }
+    .text-content{
+        padding: 1%;
+    }
+    .mimg{
+        margin-right: 5% !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .banner-section-title{
+        font-size: 3rem;
+        margin-top: 15%
+    }
+}

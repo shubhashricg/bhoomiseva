@@ -29,10 +29,10 @@ export default function home() {
                 Bhoomi Seva
               </h1>
               <div className="home-banner-btnHolder" style={{"margin-left": "2%", "margin-top": "2%"}}>
-                <button className="rounded-orangeBtn">
+                <button className="rounded-orangeBtn" onClick={event =>  window.location.href='/bhoomiseva/#/donate'}>
                   Donate
                 </button>
-                <button className="rounded-whiteBtn" style={{"margin-left": "2%"}}>
+                <button className="rounded-whiteBtn" style={{"margin-left": "2%"}} onClick={event =>  window.location.href='/bhoomiseva/#/contact'}>
                   Contact
                 </button>
               </div>

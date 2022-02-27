@@ -7,7 +7,7 @@ import { phone } from '../../App';
 
 export default function support() {
   return (
-    <div style={{"marginTop": "60%", "padding-right": "4%"}}>
+    <div style={{"marginTop": "20%", "padding-right": "4%", "padding-left": "4%"}}>
       <h3 className='page-title' style={{"font-size": "2.4rem"}}> Support us</h3>
 
       <div style={{"boxShadow": "var(--hover)", "padding": "5% 8%"}}>
@@ -34,7 +34,7 @@ export default function support() {
         <br />
 
         <div className='text-center mx-auto'>
-          <button className='donateBtn'>
+          <button className='donateBtn' onClick={event =>  window.location.href='/bhoomiseva/#/donate'}>
               Donate 
           </button>
         </div>

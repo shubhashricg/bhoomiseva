@@ -127,3 +127,15 @@ code {
   border: none;
   border-radius: 0.2rem;
 }
+
+.project-section-title{
+  font-family: var(--font-noto);
+  font-size: 2.4rem;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}

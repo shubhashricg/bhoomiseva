@@ -54,6 +54,27 @@
     background-color: transparent !important;
     transition: 0.2s ease-in-out !important;
 }
+
+.offcanvas{
+  background-image: url(../../images/texture.jpeg);
+  background-size: 100% 100%;
+}
+
+.offcanvas-link{
+  text-decoration: none;
+  color: var(--orange);
+  font-size: 1.4rem;
+}
+
+.offcanvas-link:hover{
+  color: var(--orange);
+}
+
+#offcanvasRightLabel{
+  font-family: var(--font-noto);
+  border-bottom: 5px solid var(--orange);
+}
+
 @keyframes slideIn {
     0% {
       transform: translateY(1rem);

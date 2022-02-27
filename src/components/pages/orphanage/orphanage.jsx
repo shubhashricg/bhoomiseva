@@ -1,0 +1,84 @@
+import React from 'react';
+import Navbar from '../../../components/navbar/navbar';
+import Support from '../../support/support';
+import { Helmet } from 'react-helmet';
+import './orphanage.css';
+import orphanageChildren from '../../../images/orphanage/orphanageBG.jpeg';
+import orph1 from '../../../images/orphanage/orph1.jpeg';
+import orph2 from '../../../images/orphanage/orph2.jpeg';
+import orph3 from '../../../images/orphanage/orph3.jpeg';
+import orph4 from '../../../images/orphanage/orph4.jpeg';
+import orph5 from '../../../images/orphanage/orph5.jpeg';
+
+export default function orphanage() {
+  return (
+    <div>
+
+        <Helmet>
+            <title>Bhoomi Seva | Orphanage Support</title>
+        </Helmet>
+
+
+        <div className="orphanage-bg">
+                <div style={{"background": "rgba(0, 0, 0, 0.04)", "height": "75vh"}}>
+                <Navbar />
+
+                <h1 className='banner-section-title' style={{"marginTop": "13%"}}>
+                    Bhoomi Seva for <br />
+                    Orphanage Support.
+                </h1>
+                <div style={{"margin-left": "2%", "margin-top": "1.5%"}}>
+                    <button className="rounded-orangeBtn" style={{"padding": "0.8% 2.5%"}} onClick={event =>  window.location.href='/bhoomiseva/#/donate'}>
+                    Donate
+                    </button>
+                    <button className="rounded-whiteBtn" style={{"padding": "0.8% 2.5%", "margin-left": "1%"}} onClick={event =>  window.location.href='/bhoomiseva/#/get-involved'}>
+                    Join Initiative
+                    </button>
+                </div>
+                </div>
+        </div>
+
+        <div className="row">
+
+            <div className="col-sm-8">
+                <h1 className='page-title' style={{"fontSize": "3.6rem"}}>Orphanage Support</h1>
+
+                <p class="text-content project-section-text" style={{"padding": "2% 4%", "text-align": "justify", "font-size": "1.4rem", "margin-top": "4%"}}>
+                <ul><li>Sponsor a meal for the orphanage kids for around Rs 6000</li></ul>
+                <ul><li>School/College fees support for the kids at times</li></ul>
+                <ul><li>Donation of laptops so that the kids can take online classes</li></ul>
+                <ul><li>Donation of bicycles</li> </ul>
+                <ul><li>Donations of Used clothes, foot wear, stationary items, furniture etc.</li></ul>
+
+                </p>
+
+                <div style={{"padding": "2% 8%"}}>
+                </div>
+                
+
+            </div>
+            <div className="col-sm-4">
+                <Support />
+            </div>
+        </div>
+
+        <div className="row" style={{"padding": "1% 2%"}}>
+
+        <h1 className='page-title' style={{"fontSize": "4.4rem", "margin-bottom": "4%"}}>Gallery</h1>
+
+            <div className="col-sm-6">
+                <img src={orph1} alt="orphan children" class="img-fluid" />
+                <img src={orph3} alt="orphan children" class="img-fluid" style={{"margin-top": "2%"}} />
+                <img src={orph4} alt="orphan children" class="img-fluid" style={{"margin-top": "2%"}} />
+            </div>
+            <div className="col-sm-6">
+                <img src={orph2} alt="orphan children" class="img-fluid" />
+                <img src={orphanageChildren} alt="orphanage" className='img-fluid' style={{"margin-top": "2%"}} />
+                <img src={orph5} alt="orphan children" class="img-fluid" style={{"margin-top": "2%"}} />
+            </div> 
+            
+        </div>
+
+    </div>
+  )
+}
