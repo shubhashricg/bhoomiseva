@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bhoomiseva/static/css/main.5d80bfcb.css",
-    "main.js": "/bhoomiseva/static/js/main.20b4fe99.js",
+    "main.css": "/bhoomiseva/static/css/main.a28db20b.css",
+    "main.js": "/bhoomiseva/static/js/main.cadc1f41.js",
     "static/js/787.da29499f.chunk.js": "/bhoomiseva/static/js/787.da29499f.chunk.js",
     "static/media/donateBG.jpeg": "/bhoomiseva/static/media/donateBG.ada68781c8daa9d3ac32.jpeg",
-    "static/media/contactBG.jpeg": "/bhoomiseva/static/media/contactBG.d946c93a3fca92ad88f2.jpeg",
     "static/media/orphanage.jpeg": "/bhoomiseva/static/media/orphanage.aee5c7f2f8e54dcf382f.jpeg",
     "static/media/forest-bg.jpeg": "/bhoomiseva/static/media/forest-bg.381ecc2a722b6b31aa2e.jpeg",
     "static/media/aboutBG.jpeg": "/bhoomiseva/static/media/aboutBG.c008e5fbdc6a03da77d8.jpeg",
     "static/media/envBg.jpeg": "/bhoomiseva/static/media/envBg.afc5f540782f060802e2.jpeg",
     "static/media/cowdonation.jpg": "/bhoomiseva/static/media/cowdonation.b0ed0866ee748002b26c.jpg",
     "static/media/cowdonation2.jpg": "/bhoomiseva/static/media/cowdonation2.b0ed0866ee748002b26c.jpg",
+    "static/media/contactBG.jpeg": "/bhoomiseva/static/media/contactBG.598a7b96a51dea6797cc.jpeg",
     "static/media/orph3.jpeg": "/bhoomiseva/static/media/orph3.12f9062cf5c20ef16546.jpeg",
     "static/media/farmerTraining.jpeg": "/bhoomiseva/static/media/farmerTraining.2559278361fe3651cd13.jpeg",
     "static/media/banner.jpeg": "/bhoomiseva/static/media/banner.740769e89f7fd1f20e09.jpeg",
@@ -28,7 +28,7 @@
     "static/media/orph5.jpeg": "/bhoomiseva/static/media/orph5.491e347e0c2c85de0bda.jpeg",
     "static/media/edu-1.jpeg": "/bhoomiseva/static/media/edu-1.35539bb070fbbca3dd24.jpeg",
     "static/media/scholarship.jpg": "/bhoomiseva/static/media/scholarship.3cb2d8224f7889c8a376.jpg",
-    "static/media/texture.jpeg": "/bhoomiseva/static/media/texture.de176ea84ccfea6dc2c9.jpeg",
+    "static/media/leafHold.jpeg": "/bhoomiseva/static/media/leafHold.f61f7495cf627747bb8d.jpeg",
     "static/media/sreeraksha.jpeg": "/bhoomiseva/static/media/sreeraksha.3d0c7ae775118f09aec4.jpeg",
     "static/media/vasanthvc.jpeg": "/bhoomiseva/static/media/vasanthvc.50e37b6ef7617923921e.jpeg",
     "static/media/upi.png": "/bhoomiseva/static/media/upi.44da87100269623a123d.png",
@@ -36,13 +36,14 @@
     "static/media/gpay.png": "/bhoomiseva/static/media/gpay.c2eeb3bcf0722648d6f2.png",
     "static/media/QR.jpeg": "/bhoomiseva/static/media/QR.dd1f936fe68958c3d774.jpeg",
     "static/media/logo.jpeg": "/bhoomiseva/static/media/logo.42c15a1d1a3a93b18aab.jpeg",
+    "static/media/divider.svg": "/bhoomiseva/static/media/divider.d5a1ad32e1d0480363aa65bc5e32ad84.svg",
     "index.html": "/bhoomiseva/index.html",
-    "main.5d80bfcb.css.map": "/bhoomiseva/static/css/main.5d80bfcb.css.map",
-    "main.20b4fe99.js.map": "/bhoomiseva/static/js/main.20b4fe99.js.map",
+    "main.a28db20b.css.map": "/bhoomiseva/static/css/main.a28db20b.css.map",
+    "main.cadc1f41.js.map": "/bhoomiseva/static/js/main.cadc1f41.js.map",
     "787.da29499f.chunk.js.map": "/bhoomiseva/static/js/787.da29499f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d80bfcb.css",
-    "static/js/main.20b4fe99.js"
+    "static/css/main.a28db20b.css",
+    "static/js/main.cadc1f41.js"
   ]
 }
