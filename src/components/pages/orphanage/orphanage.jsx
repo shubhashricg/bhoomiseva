@@ -9,6 +9,8 @@ import orph2 from '../../../images/orphanage/orph2.jpeg';
 import orph3 from '../../../images/orphanage/orph3.jpeg';
 import orph4 from '../../../images/orphanage/orph4.jpeg';
 import orph5 from '../../../images/orphanage/orph5.jpeg';
+import divider from '../../../images/divider.svg';
+import SectionSupport from '../../sectionSupport/sectionSupport';
 
 export default function orphanage() {
   return (
@@ -20,7 +22,7 @@ export default function orphanage() {
 
 
         <div className="orphanage-bg">
-                <div style={{"background": "rgba(0, 0, 0, 0.04)", "height": "75vh"}}>
+                <div style={{"background": "rgba(0, 0, 0, 0.2)", "height": "75vh"}}>
                 <Navbar />
 
                 <h1 className='banner-section-title' style={{"marginTop": "13%"}}>
@@ -42,6 +44,7 @@ export default function orphanage() {
 
             <div className="col-sm-8">
                 <h1 className='page-title' style={{"fontSize": "3.6rem"}}>Orphanage Support</h1>
+                <img src={divider} className='img-fluid page-title-hr' alt='flower stick' />
 
                 <p class="text-content project-section-text" style={{"padding": "2% 4%", "text-align": "justify", "font-size": "1.4rem", "margin-top": "4%"}}>
                 <ul><li>Sponsor a meal for the orphanage kids for around Rs 6000</li></ul>
@@ -62,9 +65,12 @@ export default function orphanage() {
             </div>
         </div>
 
-        <div className="row" style={{"padding": "1% 2%"}}>
+        <h1 className='page-title text-center' style={{"fontSize": "4.4rem", "margin-bottom": "4%"}}><img src={divider} className='img-fluid' alt='flower stick' /> Gallery <img src={divider} className='img-fluid ' alt='flower stick' /></h1>
 
-        <h1 className='page-title' style={{"fontSize": "4.4rem", "margin-bottom": "4%"}}>Gallery</h1>
+        <div className="row mx-auto" style={{"padding": "1% 2%"}}>
+
+        
+        
 
             <div className="col-sm-6">
                 <img src={orph1} alt="orphan children" class="img-fluid" />
@@ -78,7 +84,7 @@ export default function orphanage() {
             </div> 
             
         </div>
-
+<SectionSupport />
     </div>
   )
 }

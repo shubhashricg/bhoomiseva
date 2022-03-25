@@ -1,6 +1,9 @@
 .footer{
-    background-color: rgb(31, 31, 31);
-    padding: 0% 5%;
+    background-color: rgb(252 248 234);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0.2%;
+    padding-top: 2%;
     margin-top: 8%;
 }
 
@@ -8,17 +11,17 @@
     padding: 0% 12% !important;
 }
 
-.credit{
-    font-size: 0.9rem;
+.cred{
+    color: var(--wood);
+    font-family: var(--font-mono);
 }
 
 .dev-link{
-    color:#6c757d;
-    font-size: 0.9rem;
+    color: var(--wood);
 }
 
 .dev-link:hover{
-    color: #6c757d;
+    color: var(--wood);
 }
 
 @media only screen and (max-width: 600px) {
@@ -33,9 +36,6 @@
 
 @media only screen and (max-width: 390px) {
     .credit{
-        font-size: 0.7rem;
-    }
-    .dev-link{
         font-size: 0.7rem;
     }
 }

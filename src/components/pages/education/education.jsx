@@ -3,7 +3,10 @@ import { Helmet } from 'react-helmet';
 import Navbar from '../../navbar/navbar';
 import './education.css';
 import Support from '../../support/support';
+import {GiSpotedFlower} from 'react-icons/gi';
 import { testimonialName1_1, testimonialImage1_1, testimonialProfession1_1, testimonial1_1, edugalleryImg1, edugalleryImg2, testimonial1_4_a, testimonialImage1_4_a, testimonialName1_4_a, testimonialProfession1_4_a, testimonial1_4_b, testimonialProfession1_4_b, testimonialName1_4_b, testimonialImage1_4_b } from '../../../educationManager';
+import divider from '../../../images/divider.svg';
+import SectionSupport from '../../sectionSupport/sectionSupport';
 
 export default function education() {
   return (
@@ -36,6 +39,7 @@ export default function education() {
 
         <div className="col-sm-8">
           <h1 className='page-title' style={{"fontSize": "3.6rem"}}>Education</h1>
+          <img src={divider} className='img-fluid page-title-hr' alt='flower stick' />
 
             <div style={{'padding': "2% 4%"}}>
               <h3 class="project-section-title" style={{"font-size": "2rem !important", "color": "black !important", "margin-top": "5%"}}>1.1 Scholarships for the Merit Rural Students</h3>
@@ -127,7 +131,7 @@ export default function education() {
           
 
           <div style={{"marginTop": "60%", "padding-right": "4%",  "padding-left": "4%"}}>
-            <h3 className='page-title' style={{"font-size": "2.4rem"}}> Gallery</h3>
+            <h3 className='page-title' style={{"font-size": "2.4rem"}}><GiSpotedFlower /> Gallery</h3>
 
             <div style={{"boxShadow": "var(--hover)", "padding": "5% 8%"}}>
               <br />
@@ -142,6 +146,8 @@ export default function education() {
 
         </div>
       </div>
+
+      <SectionSupport />
 
     </div>
   )

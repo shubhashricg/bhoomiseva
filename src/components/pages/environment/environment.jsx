@@ -4,6 +4,9 @@ import './environment.css';
 import Navbar from '../../navbar/navbar';
 import Support from '../../support/support';
 import { farmerTrainingImage, personTestimonialImageCowDonation, personTestimonialKanadaCowDonation, personTestimonialCowDonation, cowDonation1Image, cowDonation2Image, envgalleryImg1, envgalleryImg2, personTestimonialNameCowDonation, personTestimonialProfessionCowDonation } from '../../../environmentManager';
+import divider from '../../../images/divider.svg';
+import {GiSpotedFlower} from 'react-icons/gi';
+import SectionSupport from '../../sectionSupport/sectionSupport';
 
 export default function environment() {
   return (
@@ -36,7 +39,8 @@ export default function environment() {
 
 
         <div className="col-sm-8">
-          <h1 className='page-title' style={{"fontSize": "3.6rem"}}>Environment</h1>
+          <h1 className='page-title' style={{"fontSize": "3.6rem"}}>Environment  </h1> 
+          <img src={divider} className='img-fluid page-title-hr' alt='flower stick' />
 
           <h1 class="text-content project-section-text" style={{"font-size": "1.4rem", "text-align": "justify", "padding": "2% 4%", "marginTop": "5%"}}>
                             Today, fertility of soil has depleted due to the use of chemical fertilizers all over the world. <br /><br /><br />
@@ -102,7 +106,7 @@ export default function environment() {
           
 
           <div style={{"marginTop": "60%", "padding-right": "4%", "padding-left": "4%"}}>
-            <h3 className='page-title' style={{"font-size": "2.4rem"}}> Gallery</h3>
+            <h3 className='page-title' style={{"font-size": "2.4rem"}}><GiSpotedFlower /> Gallery</h3>
 
             <div style={{"boxShadow": "var(--hover)", "padding": "5% 8%"}}>
               <br />
@@ -117,6 +121,8 @@ export default function environment() {
 
         </div>
       </div>
+
+      <SectionSupport />
 
     </div>
   )

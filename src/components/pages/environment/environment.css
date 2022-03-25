@@ -10,6 +10,10 @@
     padding: 1% 2%;
 }
 
+.text-content{
+    font-family: var(--font-mono);
+}
+
 .testimonial .card-text{
     font-size: 1rem;
 }
@@ -28,12 +32,12 @@
 
 @media only screen and (max-width: 600px) {
     .banner-section-title{
-        font-size: 3.5rem;
-        margin-top: 25%
+        font-size: 3rem;
+        margin-top: 35%
     }
     .env-bg{
         background-image: url(../../../images/environment/envBg.jpeg);
-        background-size: 200% 100%;
+        background-size: 210% 100%;
         height: 75vh;
     }
     .rounded-orangeBtn{
@@ -57,5 +61,8 @@
     .banner-section-title{
         font-size: 3rem;
         margin-top: 15%
+    }
+    .page-title{
+        font-size: 3rem !important;
     }
 }

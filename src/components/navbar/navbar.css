@@ -5,20 +5,25 @@
 }
 
 .navbar{
-    padding-left: 10%;
+    padding-left: 1%;
     padding-right: 1%;
-    padding-top: 2% !important;
+    padding-top: 1.4% !important;
+}
+
+.btn-close{
+  font-size: 1.4rem;
 }
 
 .nav-link{
     color: white !important;
+    font-weight: 600;
     padding: 0 0.8rem !important;
     text-decoration: none;
     transition: 0.2s ease-in-out;
 }
 
 .nav-link:hover{
-    color: rgba(255, 255, 255, 0.850) !important;
+    color: white !important;
     text-decoration: none;
     transition: 0.2s ease-in-out;
 }
@@ -30,7 +35,7 @@
 }
 
 .social-link:hover{
-    color: rgba(255, 255, 255, 0.850) !important;
+    color: white !important;
     transition: 0.2s ease-in-out;
 }
 
@@ -56,22 +61,26 @@
 }
 
 .offcanvas{
-  background-image: url(../../images/texture.jpeg);
-  background-size: 100% 100%;
+  background-color: rgb(250 249 231) !important;
 }
 
 .offcanvas-link{
   text-decoration: none;
-  color: var(--orange);
+  font-family: var(--font-noto);
+  font-weight: 600;
+  color: var(--wood);
   font-size: 1.4rem;
+  padding: 2%;
 }
 
 .offcanvas-link:hover{
-  color: var(--orange);
+  color: var(--wood);
 }
 
 #offcanvasRightLabel{
   font-family: var(--font-noto);
+  font-size: 3rem;
+  color: var(--wood);
   border-bottom: 5px solid var(--orange);
 }
 

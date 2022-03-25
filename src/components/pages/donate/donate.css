@@ -7,3 +7,40 @@
 mark{
     background-color: rgba(255, 255, 0, 0.932) !important;
 }
+
+.italic{
+    font-family: var(--font-noto);
+}
+
+.navTab-link{
+    color: black !important;
+    padding-top: 1.4% !important;
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+}
+
+.navTab-link:hover{
+    color: black !important;
+}
+
+@media only screen and (max-width: 992px){
+    .changed-padding{
+        padding: 0% !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .donate-bg{
+        background-image: url(../../../images/donate/donateBG.jpeg);
+        background-size: 200% 100%;
+        height: 65vh;
+    }
+
+    .overlay{
+        height: 65vh !important;
+    }
+
+    .donate-content{
+        padding: 2%;
+    }
+}

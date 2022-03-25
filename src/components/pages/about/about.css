@@ -1,13 +1,36 @@
 .about-bg{
     background-image: url('../../../images/about/aboutBG.jpeg');
     background-size: 100% 100%;
-    height: 85vh;
+    height: 75vh;
 }
 
 @media only screen and (max-width: 600px) {
     .about-bg{
         background-image: url('../../../images/about/aboutBG.jpeg');
-        background-size: 200% 100%;
-        height: 75vh;
+        background-size: 220% 100%;
+        height: 65vh;
     }
+}
+
+.photoframe{
+    border: 4px solid var(--darkwood);
+    padding: 2%;
+}
+.name{
+    color: white;
+    font-family: var(--font-noto);
+    font-size: 3rem;
+}
+
+.about-detail{
+    font-family: var(--font-mono);
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    font-size: 1.2rem;
+}
+
+.outer-photoframe{
+    border: 4px solid var(--darkwood);
+    padding: 0.2%;
 }

@@ -6,7 +6,16 @@ import logo from '../../../images/logo.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSeedling, faSchool, faHouseChimneyUser, faChevronDown, faMapMarkerAlt, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { recentEvent_1_description, recentEvent_2_description, recentEvent_3_description, recentEvent_1_image, recentEvent_2_image, recentEvent_3_image } from '../../../recentEventManager';
+import {GiTwirlyFlower} from 'react-icons/gi';
+import {IoIosArrowRoundForward} from 'react-icons/io';
+import Button from '@mui/material/Button';
+import {FaCanadianMapleLeaf} from 'react-icons/fa';
+import orph from '../../../images/orphanage/orph2.jpeg';
+import leafHold from '../../../images/leafHold.jpeg';
+import divider from '../../../images/divider.svg';
 import { event_1_description, event_1_title, event_1_location, event_1_image } from '../../../eventManager';
+import SectionSupport from '../../sectionSupport/sectionSupport';
+import { email } from '../../../App';
 
 export default function home() {
   return (
@@ -14,26 +23,26 @@ export default function home() {
       <Helmet>
         <title>Bhoomi Seva</title>
       </Helmet>
+      
       <div className='banner-img'>
-        <Navbar />
-
+      <Navbar />
         <div className="home-banner-text">
           <div className="row">
-
+          
 
             <div className="col-sm-6">
               <h1 className='home-banner-text welcome-text'> 
                 Welcome to
               </h1>
-              <h1 className="home-banner-text" style={{"font-size": "5.8rem", "font-weight": "700"}}>
+              <h1 className="home-banner-text" style={{"font-size": "5.5rem", "font-weight": "700"}}>
                 Bhoomi Seva
               </h1>
               <div className="home-banner-btnHolder" style={{"margin-left": "2%", "margin-top": "2%"}}>
                 <button className="rounded-orangeBtn" onClick={event =>  window.location.href='/bhoomiseva/#/donate'}>
-                  Donate
+                  DONATE
                 </button>
                 <button className="rounded-whiteBtn" style={{"margin-left": "2%"}} onClick={event =>  window.location.href='/bhoomiseva/#/contact'}>
-                  Contact
+                  CONTACT
                 </button>
               </div>
             </div>
@@ -47,8 +56,19 @@ export default function home() {
 
         </div>
 
+        <section className='mx-auto text-center' style={{"padding": "5%"}}>
+          <GiTwirlyFlower class="symbol" />
+          <h1 class="define" style={{"marginTop": "2%", "color": "#968b6a"}}>
+            Let's give a better <br />Earth to our children!
+          </h1>
+
+          <a href="/bhoomiseva/#/about" class="about-link">ABOUT US<IoIosArrowRoundForward style={{"font-size": "1.4em"}} /></a>
+        </section>
+
+        <hr className='hr-sec mx-auto' style={{"marginBottom": "5%"}} />
+        
         <section className="what-we-do">
-          <h1 className='section-title fancy-title mx-auto text-center'>WHAT WE DO</h1>
+          <h1 className='section-title fancy-title mx-auto text-center' style={{"color": "#5e522b"}}><img src={divider} className="img-fluid" alt="flower stick" /> WHAT WE DO <img src={divider} className="img-fluid" alt="flower stick" /></h1>
         <div class="row card-container" style={{"padding": "2%"}} >
                 <div class="col-sm-4 card-container-ind">
                     <div class="card">
@@ -59,7 +79,7 @@ export default function home() {
                             <ul><li>Cow donations to marginal farmers who want to switch to agroforestry.</li></ul>
                           </p>
                           <div class="mx-auto text-center" >
-                            <a href="/bhoomiseva/#/environment" class="btn mx-auto text-center redBtn" >Read more</a>
+                            <Button variant="contained" className="containedBtn" disableElevation onClick={event =>  window.location.href='/bhoomiseva/#/environment'}>Read more</Button>
                           </div>
                         </div>
                       </div>
@@ -75,7 +95,7 @@ export default function home() {
                             <ul><li>External Scholarship opportunities guidance for rural merit students<br /></li></ul>
                           </p>
                           <div class="mx-auto text-center">
-                            <a href="/bhoomiseva/#/education" class="btn mx-auto text-center redBtn">Read more</a>
+                          <Button variant="contained" className="containedBtn" onClick={event =>  window.location.href='/bhoomiseva/#/education'} disableElevation>Read more</Button>
                           </div>
                         </div>
                       </div>
@@ -93,7 +113,7 @@ export default function home() {
                             
                           </p>
                           <div class="mx-auto text-center" >
-                            <a href="/bhoomiseva/#/orphanage-support" class="btn mx-auto text-center redBtn" >Read more</a>
+                          <Button variant="contained" className="containedBtn" onClick={event =>  window.location.href='/bhoomiseva/#/orphanage-support'} disableElevation>Read more</Button>
                           </div>
                         </div>
                       </div>
@@ -102,8 +122,9 @@ export default function home() {
         </section>
 
         <div className="recent-events" style={{"min-height": "90vh"}}>
-        <h1 class="fancy-title mobile-title mx-auto text-center" style={{"color": "var(--orange)", "font-weight": "700"}}>Recent Events</h1>
-            <h1 class='title mx-auto text-center'>AT BHOOMI SEVA</h1>
+          <h1 class="mx-auto text-center"><FaCanadianMapleLeaf style={{"color": "#968b6a"}} /></h1>
+        <h1 class="fancy-title mobile-title mx-auto text-center" style={{"color": "#968b6a", "font-weight": "500"}}>Recent Events</h1>
+            <h1 class='title mx-auto text-center' style={{"color": "var(--red-alpha)"}}>AT BHOOMI SEVA</h1>
 
             <div class="row mx-auto text-center" style={{"margin-top": "5%"}}>
               
@@ -171,11 +192,38 @@ export default function home() {
             </div>
         </div>
 
-        <div className="events-ongoing" style={{"marginTop": "2%"}}>
-        <h1 class="fancy-title mobile-title mx-auto text-center" style={{"color": "var(--orange)"}}>Initiatives Ongoing</h1>
-            <h1 class='title mx-auto text-center'>AT BHOOMI SEVA</h1>
+        <section>
+        <h1 className='section-title fancy-title mx-auto text-center' style={{"color": "#5e522b", "marginTop": "5%"}}><img src={divider} className="img-fluid" alt="flower stick" /> Support Our Work <img src={divider} className="img-fluid" alt="flower stick" /></h1>
+          <div className="row orphanage-section" style={{"padding": "6% 2%"}}>
+            <div className="col-sm-6 mt-auto" style={{"padding": "2% 2%"}}>
+              <h1 className="define" style={{"fontSize": "3rem"}}>Support Sri Krishnashraya orphanage</h1>
+              <p className="subtext">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </p>
+
+              <br />
+              <Button variant="outlined" className='learn-more-outline' size="large" onClick={event =>  window.location.href='/bhoomiseva/#/orphanage-support'}>Learn more</Button>
+            </div>
+            <div className="col-sm-6 mx-auto" style={{"textAlign": "center"}}>
+                <img src={orph} alt="orphan children" style={{"boxShadow": "var(--hover)", "width": "70%"}} className='img-fluid orphanage-section-img' />
+            </div>
+          </div>
+        </section>
+
+        <section className='nice col-sm-12 my-auto text-center'>
+          <h1 className='define my-auto text-center' style={{"fontSize": "3.5rem", "font-weight": "700"}}>Save Our Environment.</h1> <br />
+          <Button variant="contained" className='explore-more' size="large" onClick={event =>  window.location.href='/bhoomiseva/#/environment'} disableElevation>Explore more</Button>
+        </section>
+
+        <div className="events-ongoing" style={{"marginTop": "5%"}}>
+        <h1 class="fancy-title mobile-title mx-auto text-center" style={{"color": "#968b6a"}}>Initiatives Ongoing</h1>
+            <h1 class='title mx-auto text-center' style={{"color": "black"}}>AT BHOOMI SEVA</h1>
 
             <div class="row" style={{"padding": "2% 5%"}}>
+                <div class='col-sm-4'>
+                
+                </div>
+
                 <div class='col-sm-4'>
                     <div class="card">
                         <img src={event_1_image} class="card-img-top" alt="farmers training" />
@@ -183,13 +231,10 @@ export default function home() {
                           <h5 class="card-title">{event_1_title}</h5>
                           <h5 class='location'><FontAwesomeIcon icon={faMapMarkerAlt} /> {event_1_location}</h5>
                           <p class="card-text" style={{"textAlign": "left"}}>{event_1_description}</p>
-                          <a href="/event-1" class="link">Learn more <FontAwesomeIcon icon={faChevronRight} size='xs' /></a>
+                          <a href="/event-1" class="link" data-bs-toggle="modal" data-bs-target="#event1Modal">Learn more<IoIosArrowRoundForward style={{"fontSize": "1.4rem"}} /></a>
                         </div>
                     </div>
-                </div>
-
-                <div class='col-sm-4'>
-
+                    
                 </div>
 
                 <div class='col-sm-4'>
@@ -197,10 +242,30 @@ export default function home() {
                 </div>
             </div>
 
-            <div class="mx-auto text-center">
-                <button class="btn redBtn">VIEW EVENTS</button>
-            </div>
         </div>
+
+      <SectionSupport />
+
+      <div class="modal fade" id="event1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">{event_1_title}</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Farmers’ training in agroforestry and natural farming is organized on 16th and 17th of April in Chirantana School, Kabbalu, Kanakapura to spread awareness among farmers. <br /> <br />
+            <ul><li>Publicize about training program among farmers in and around Kanakapura.<br /></li></ul>
+            <ul><li>Lunch and tea organized for farmers on the training days.<br /></li></ul>
+            <ul><li>Registration of farmers who want to switch to agroforestry and/or natural farming.<br /></li></ul>
+            <ul><li>Cow donations to selected marginal farmers.<br /></li></ul>
+            <ul><li>If you wish you can donate in small amounts like 1k, 2k, 5k… Visit <a href='/bhoomiseva/#/donate' class='text-link'>donate</a> <br /></li></ul>
+            <ul><li>If you wish to volunteer leave a message at {email}</li></ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   )

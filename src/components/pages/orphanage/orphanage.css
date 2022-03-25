@@ -1,5 +1,29 @@
 .orphanage-bg{
     background-image: url(../../../images//orphanage/orphanage.jpeg);
-    background-size: 100% 120%;
-    height: 85vh;
+    background-size: 100% 100%;
+    height: 75vh;
+}
+
+@media only screen and (max-width: 376px) {
+    .orphanage-bg{
+        background-image: url(../../../images//orphanage/orphanage.jpeg);
+        background-size: 280% 100%;
+        height: 75vh;
+    }
+
+    .banner-section-title{
+        margin-top: 20% !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .orphanage-bg{
+        background-image: url(../../../images//orphanage/orphanage.jpeg);
+        background-size: 280% 100%;
+        height: 75vh;
+    }
+
+    .banner-section-title{
+        margin-top: 35% !important;
+    }
 }

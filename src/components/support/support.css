@@ -1,0 +1,5 @@
+@media only screen and (max-width: 375px) {
+    .section-comp-title{
+        font-size: 2rem !important;
+    }
+}
